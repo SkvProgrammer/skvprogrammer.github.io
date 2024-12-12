@@ -1,621 +1,170 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Satyam Kumar Verman</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Kumar Verman</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #00203f, #004d61);
+      color: #e0f7fa;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .navbar {
+      background-color: #004d61;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #e0f7fa !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #00c853 !important;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #00c853, #004d61);
+      color: #fff;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      animation: slideIn 1.5s ease;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      animation: slideIn 1.5s ease;
+    }
+    .hero .btn {
+      background-color: #00c853;
+      color: #fff;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .hero .btn:hover {
+      background-color: #004d61;
+      transform: scale(1.1);
+    }
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    #about, #contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    #about {
+      background: #e0f7fa;
+      color: #004d61;
+      animation: fadeInUp 1.5s ease;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    #contact {
+      background: #004d61;
+      color: #e0f7fa;
+      animation: fadeInDown 1.5s ease;
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #00203f;
+      color: #e0f7fa;
+      font-size: 1rem;
+      animation: fadeIn 2s ease;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #00c853;
+    }
+  </style>
 </head>
-
 <body>
-	<style>
-		#self{
-			filter:drop-shadow(2px 4px 7px #585858);
-		}
-
-		html{
-			scroll-behavior:smooth;
-		}
-       .Contactme:hover{
-		   background-image:linear-gradient(white,white)!important;
-		   color:black!important;
-		   border: 2px solid #854fee!important;
-	   }
-
-		@media(max-width:766px ){
-			.Contactme{
-				display:block!important;
-			}
-		}
-		.modal-footer,.modal-header{
-			border: none!important;
-		}
-		.modal.fade .modal-dialog {
-    -webkit-transform: translate3d(0, 25%, 0);
-    transform: translate3d(0, 25%, 0);
-}
-	</style>
-
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-white">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/default.png" alt="" style="height:100px;width:100px;"></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about" style="color:black!important;">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#services" style="color:black!important;">Services</a></li>
-							<li class="nav-item"><a class="nav-link" href="#portfolio" style="color:black!important;">Portfolio</a></li>
-							<!--<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-								</ul
-							</li>-->
-							
-							<!--<li class="nav-item"><a class="nav-link" href="contact.html" style="color:black!important;">Contact</a></li>
-							-->
-							<!--<li class="nav-item"><a class="nav-link" href="https://devtipsntricks.com" style="color:black!important;">Blogs</a></li>
-							--></ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
-
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<!--<img src="img/self_t.png" style="height:150px;width:150px;border-radius:100px;border-top-right-radius:110px;border-top-left-radius:125px;" id="self" class="mb-2">
-						--><div class="banner_content">
-							
-							<h3 class="text-uppercase">Hello</h3>
-							
-							<h2 class="text-uppercase" style="text-decoration:none!important;">I am Satyam Kumar Verman</h2>
-							<h5 class="text-uppercase" style="font-size:15px;"><i class="fa fa-arrow"></i>web developer + passionate programmer</h5>						<div class="d-flex align-items-center">
-								<a class="primary_btn" data-toggle="modal" href="#mymodal"><span>Contact Me</span></a>
-								<!--<a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>-->
-								<a class="btn btn-lg btn-default Contactme pl-5 pr-5 pt-3 pb-3" style=" border:none;font-size: 16px!important;box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);font-weight: 200!important; font-family: 'Rubik', sans-serif;background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);color:white;display:none;" data-toggle="modal" href="#mymodal" data-direction="bottom"><span>CONTACT ME</span></a>								<div class="modal mt-5 fade" id="mymodal" role="dialog" style="margin-top:200px;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="background-image:linear-gradient(to right,#6610f2,#9463f0);color:white;">
-      <div class="modal-header">
-        <h5 class="modal-title" style="color:white;">Contact Me</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" style="color:white;">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>You can Contact me by mailing at <a href="mailto:satyamkumarverman@gmail.com" style="color:white;text-decoration:underline;">satyamkumarverman@gmail.com</a>.</p>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="">SKV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
+  </nav>
 
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Satyam Kumar Verman</h1>
+    <p>MERN Developer | Blockchain Enthusiast | Machine Learning | Ethical Hacking</p>
+    <a href="#contact" class="btn btn-lg">Get in Touch</a>
+  </section>
 
-				<div class="offset-lg-1 col-lg-5" id="about">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						
-							<p>
-							Hello guys,I am a passionate programmer and web developer.I am here to help you.I can develop applications from static websites to ecommerce website.I hope you will give projects to me.
-						</p>
-						<p>
-							I can do work related to web design and devlopment.
-						</p>
-						<!--<p>
-							You can connect with me on 
-     
-
-    			</p>-->
-						<a class="primary_btn" data-toggle="modal" href="#mymodalone"><span>Contact For Project</span></a>
-
-						<div class="modal mt-5 fade" id="mymodalone" role="dialog" style="margin-top:200px;">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="background-image:linear-gradient(to right,#6610f2,#6f42c1);color:white;">
-      <div class="modal-header">
-        <h5 class="modal-title" style="color:white;">Contact For Project</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" style="color:white;">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>You can discuss the project by mailing <a href="mailto:satyamkumarverman@gmail.com" style="color:white;text-decoration:underline;">satyamkumarverman@gmail.com</a>.</p>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate techie with expertise in MERN stack development, machine learning, and blockchain.
+        Skilled in Java, C, C++, Python, and JavaScript, I actively contribute to open source and explore ethical hacking.
+      </p>
     </div>
-  </div>
-</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
+  </section>
 
-	<!--================ Srart Brand Area =================-->
-	<!--<section class="brand_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo2.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo3.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo4.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo5.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo6.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo7.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo8.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo9.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="offset-lg-2 col-lg-4 col-md-6">
-					<div class="client-info">
-						<div class="d-flex mb-50">
-							<span class="lage">10</span>
-							<span class="smll">Years Experience Working</span>
-						</div>
-						<div class="call-now d-flex">
-							<div>
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="ml-15">
-								<p>call us now</p>
-								<h3>(+1)-800-555-6789</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
-	<!--================ End Brand Area =================-->
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p><a href="mailto:satyamkumarverman@gmail.com">Email me</a></p>
+      <p><a href="https://www.linkedin.com/in/satyam-kumar-verman-b77272190">LinkedIn</a></p>
+      <p><a href="https://github.com/skvprogrammer">GitHub</a></p>
+      <p><a href="https://linktree.com/skvprogrammer">All Links</a></p>
+    </div>
+  </section>
 
-	<!--================ Start Features Area =================-->
-	<section class="features_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title" id="services">
-						<h2>Service Offers </h2>
-						<p>
-							I offer a lot of services related to web apps development <br> You can discuss any project at <a href="mailto:satyamkumarverman@gmail.com" style="color:black;"><b>satyamkumarverman@gmail.com</b></a>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row feature_inner mt-3 ml-auto mr-auto text-center">
-				<div class="col-lg-3 col-md-6 mr-auto ml-auto">
-					<div class="feature_item">
-						<img src="img/services/s1.png" alt="">
-						<h4>Web Design and Development</h4>
-						<p>Both frontend and backend(php,django) will be done.</p>
-					</div>
-				</div>
-				<!--<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s2.png" alt="">
-						<h4>Desktop Applications</h4>
-						<p>I can develop powerful desktop applications using Swing(Java Framework) and C#(.NET).</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s3.png" alt="">
-						<h4>API Design</h4>
-						<p>I can design good amount of Web APIs and RESTFul APIs.I will be using NodeJS,ExpressJS or Python's Flask Framework.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s4.png" alt="">
-						<h4>Graphic Designing</h4>
-						<p>I can also do some graphical stuffs for you.I have the knowledge of Photoshop,Blender and Illustrator.</p>
-					</div>
-				</div>-->
-			</div>
-		</div>
-	</section>
-	<!--================ End Features Area =================-->
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Satyam Kumar Verman. All rights reserved.</p>
+  </footer>
 
-	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>quality work <br>
-							Recently done project </h2>
-					</div>
-				</div>
-			</div>
-			<!--<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".popular">popular</li>
-					<li data-filter=".latest"> latest</li>
-					<li data-filter=".following">following</li>
-					<li data-filter=".upcoming">upcoming</li>
-				</ul>
-			</div>-->
-	
-			<div class="filters-content">
-				<div class="row portfolio-grid justify-content-center">
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p11.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p11.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html"></a></h4>
-								<p>Great UI</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all popular">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p12.png" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p12.png" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html"></a></h4>
-								<p>Animated Website</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p13.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p13.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html"></a></h4>
-								<p>Authetications Form using Bootstrap 4 and Php , MySQL.</p>
-							</div>
-						</div>
-					</div>
-			
-					
-
-
-	<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p14.jpg" alt="">
-								<div class="overlay"></div>
-								<a href="img/portfolio/p14.jpg" class="img-gal">
-									<div class="icon">
-										<span class="lnr lnr-cross"></span>
-									</div>
-								</a>
-							</div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html"></a></h4>
-								<p>Online Clothing Store.</p>
-							</div>
-						</div>
-					</div>
-
-
-
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Portfolio Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	<!--<div class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>client say about me</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div>-->
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Newsletter Area =================-->
-	<!--<section class="newsletter_area">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-12">
-					<div class="subscription_box text-center">
-						<h2 class="text-uppercase text-white">get update from anywhere</h2>
-						<p class="text-white">
-							Subscribe for latest updates.
-						</p>
-						<div class="subcribe-form" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://formspree.io/xqkyrnlk" method="get" class="subscription relative">
-								<input name="_replyto" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline" type="submit">Get Started</button>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
-	<!--================ End Newsletter Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="img/default.png" alt="" style="height:200px;width:200px;">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<!--<a href="https://facebook.com/satyam.varman.12"><i class="fa fa-facebook"></i></a>
-                            --><a href="https://twitter.com/skvprogrammer"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/satyam-kumar-verman-b77272190/"><i class="fa fa-linkedin"></i></a>
-                            <!--<a href="https://instagram.com/skvprogrammer"><i class="fa fa-instagram"></i></a>
-							--><a href="https://dev.to/skvprogrammer"><img src="devto.png" style="height:20px;width:20px;" id="devto"></a>
-                           <!-- <a href="https://www.youtube.com/channel/UC_pPPgwvndi8f2RkbkbvOIA"><i class="fa fa-youtube"></i></a>
-						   --><a href="https://github.com/skvprogrammer"><i class="fa fa-github"></i></a>
-                            <a href="https://medium.com/@satyamvarman2004"><i class="fa fa-medium"></i></a>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
